@@ -2,13 +2,10 @@
 The goal of this project is to give a jumping off point for a full stack application using cherrypy and webpack.
 
 ### Getting Started
-Install python dependencies.
-`pip install -r requirements.txt`
-
-Install node dependencies.
-`npm install`
-Note: At the end of installation, `npm outdated` is run to list any outdated packages.
-This should will give you a heads up to know if you need to modify the package.json at all.
+`npm run setup`
+This command will install all node modules and python dependencies. It will also install a pre-commit hook that will run the linter. 
+Note: At the end of installation, npm and pip is checked for any outdated dependencies.
+This should will give you a heads up to know if you need to modify the package.json or requirements.txt at all.
 
 ### Development
 `npm run start`

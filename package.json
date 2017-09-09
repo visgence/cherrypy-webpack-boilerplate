@@ -5,10 +5,11 @@
     "author": "Visgence Inc.",
     "private": "true",
     "scripts": {
-        "setup": "npm run installDependencies && npm run installGitHooks",
+        "setup": "npm run installDependencies && npm run installGitHooks && npm run checkOutdated",
         "installDependencies": "pip install -r requirements.txt && npm install",
         "installGitHooks": "printf '%s#!/bin/bash %s\n %s\necho \"running linter\" %s\nnpm run lint' > .git/hooks/pre-commit",
-        "postinstall": "npm --prefix ./node_modules/node-sass/ run install && npm outdated",
+        "postinstall": "npm --prefix ./node_modules/node-sass/ run install",
+        "checkOutdated": "npm outdated && pip list --outdated",
         "start": "npm run build & python server.py",
         "build": "npm run clean && npm run watch",
         "clean": "rm -fr static/dist/",
