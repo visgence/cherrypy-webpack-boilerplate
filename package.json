@@ -6,7 +6,7 @@
     "private": "true",
     "scripts": {
         "postinstall": "npm --prefix ./node_modules/node-sass/ run install && npm outdated",
-        "start": "npm run build & ./teleceptorcmd runserver",
+        "start": "npm run build & python server.py",
         "build": "npm run clean && npm run watch",
         "clean": "rm -fr static/dist/",
         "watch": "webpack --watch --progress --config ./webpack.development.config.js",

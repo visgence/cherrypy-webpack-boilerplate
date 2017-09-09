@@ -1,5 +1,7 @@
-// import sdgf from './js/gauge';
+import TemplateObject from './componenets/templateObj/temp'; // eslint-disable-line
 
-require('./scss/style.scss');
+import './main.scss';
 
-console.log('hello world')
+$(() => {
+    console.log('hello world');
+});
