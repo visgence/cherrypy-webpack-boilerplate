@@ -10,6 +10,7 @@ This should will give you a heads up to know if you need to modify the package.j
 ### Development
 `npm run start`
 This command will start the cherrypy server, build and watch webpack.
+
 `npm run lint`
 This will lint all all html, js, scss, and py files.
 
