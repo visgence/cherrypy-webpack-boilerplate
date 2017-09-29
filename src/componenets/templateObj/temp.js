@@ -8,8 +8,8 @@ $(() => {
         createdCallback() {
             this.innerHTML = template;
         }
-        attachedCallback() { };
-        attributeChangedCallback(attrName, oldVal, newVal) { };
+        attachedCallback() { }
+        attributeChangedCallback(attrName, oldVal, newVal) { }
     }
     document.registerElement('template-object', TemplateObject);
 });
