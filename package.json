@@ -1,6 +1,6 @@
 {
     "name": "cherrypy-webpack-boilerplate",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Boilerplate for cherrypy and webpack.",
     "author": "Visgence Inc.",
     "private": "true",
@@ -14,7 +14,7 @@
         "build": "npm run clean && npm run watch",
         "clean": "rm -fr static/dist/",
         "watch": "webpack --watch --progress --config ./webpack.development.config.js",
-        "startProduction": "npm install && npm run buildProduction & python server.py",
+        "startProduction": "npm run buildProduction & python server.py",
         "buildProduction": "npm run clean && npm run webpackProduction",
         "webpackProduction": "webpack --progress --config ./webpack.production.config.js",
         "webpack": "webpack --progress --config ./webpack.development.config.js",
