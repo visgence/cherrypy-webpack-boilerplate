@@ -5,7 +5,7 @@
     "author": "Visgence Inc.",
     "private": "true",
     "scripts": {
-        "setup": "npm run installDependencies && npm run installGitHooks && npm run checkOutdated",
+        "setup": "npm run installDependencies && npm run installGitHooks",
         "installDependencies": "pip install -r requirements.txt && npm install",
         "installGitHooks": "printf '%s#!/bin/bash %s\n %s\necho \"running linter\" %s\nnpm run lint' > .git/hooks/pre-push && chmod +x .git/hooks/pre-push",
         "postinstall": "npm --prefix ./node_modules/node-sass/ run install",

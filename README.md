@@ -3,9 +3,8 @@ The goal of this project is to give a jumping off point for a full stack applica
 
 ### Getting Started
 `npm run setup`
-This command will install all node modules and python dependencies. It will also install a pre-commit hook that will run the linter. 
-Note: At the end of installation, npm and pip is checked for any outdated dependencies.
-This should will give you a heads up to know if you need to modify the package.json or requirements.txt at all.
+This command will install all node modules and python dependencies. It will also install a pre-commit hook that will run tests.
+Note: If you need cherrypy installed, this command will need to be run with sudo
 
 ### Development
 `npm run start`
