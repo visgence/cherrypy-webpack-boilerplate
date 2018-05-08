@@ -19,7 +19,7 @@
         "webpackProduction": "webpack --progress --config ./webpack.production.config.js",
         "webpack": "webpack --progress --config ./webpack.development.config.js",
         "lint": "npm run htmllint & npm run scsslint & npm run eslint & npm run pythonlint",
-        "pythonlint": "pep8 --exclude='*node_modules*' . --max-line-length=200",
+        "pythonlint": "flake8 --exclude='*node_modules*' .",
         "eslint": "./node_modules/.bin/eslint src",
         "htmllint": "./node_modules/.bin/htmlhint --config .htmlhintrc src",
         "scsslint": "./node_modules/.bin/sass-lint src '**/*.scss' -v -q"
