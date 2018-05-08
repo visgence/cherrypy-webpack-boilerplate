@@ -2,7 +2,7 @@
 The goal of this project is to give a jumping off point for a full stack application using cherrypy and webpack.
 
 ### Getting Started
-`sudo npm run setup`
+`npm run setup`
 This command will install all node modules and python dependencies. It will also install a pre-commit hook that will run tests.
 
 ### Development
