@@ -21,7 +21,7 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel-loader',
             options: {
-                presets: ['es2015'],
+                presets: ['babel-preset-env'],
             },
         }, {
             test: /\.html$/,
@@ -60,6 +60,7 @@ module.exports = {
             minimize: true,
             debug: false,
         }),
+        new webpack.optimize.ModuleConcatenationPlugin(),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
             filename: 'vendor.bundle.js',

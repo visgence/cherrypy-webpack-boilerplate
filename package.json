@@ -24,7 +24,9 @@
         "htmllint": "./node_modules/.bin/htmlhint --config .htmlhintrc src",
         "scsslint": "./node_modules/.bin/sass-lint src '**/*.scss' -v -q"
     },
-    "dependencies": {},
+    "dependencies": {
+        "jquery": "3.3.1"
+    },
     "devDependencies": {
         "babel-cli": "6.26.0",
         "babel-core": "6.26.3",
